@@ -1,5 +1,5 @@
 <script>
-import { onKeydown } from './assets/onKeydown';
+import onKeydown from './assets/onKeydown';
 import { computed, ref } from 'vue';
 
 import Header from './components/Header';

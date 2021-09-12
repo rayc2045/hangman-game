@@ -1,6 +1,6 @@
 import { onMounted, onUnmounted } from 'vue'
 
-function onKeydown(handler) {
+export default function onKeydown(handler) {
   onMounted(() => {
     window.addEventListener('keydown', handler)
   })
@@ -8,8 +8,4 @@ function onKeydown(handler) {
   onUnmounted(() => {
     window.removeEventListener('keydown', handler)
   })
-}
-
-export {
-  onKeydown
 }
